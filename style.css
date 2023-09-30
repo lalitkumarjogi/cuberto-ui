@@ -6,16 +6,24 @@
 html,body{
     width: 100%;
     height: 100%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
-.main{
-    width: 100%;
-    background-color: #fff;
+.box{
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     position: absolute;
+     background-color: rgb(240, 204, 240);
+     mix-blend-mode: difference;
+     transform: translate((-50%,-50%));
+     transition: all linear 0.1s;
+     top: 50%;
+     left: 50%;
 }
 .home{
      width: 100%;
     min-height: 100vh;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 
 
@@ -71,7 +79,7 @@ img{
         line-height: 1;
         text-transform: capitalize;
         color: transparent;
-   -webkit-text-stroke: 1px #000;
+        -webkit-text-stroke: 1.5px #000;
     }
 
     .homelast p{
@@ -107,8 +115,9 @@ img{
         }
         .left{
             width: 45%;
-           height: inherit;
+           height: 100%;
             overflow: hidden;
+
         }
 
 
